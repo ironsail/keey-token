@@ -1,2 +1,2 @@
 # wind-token
- Implementation of Wind Token following by EIP20 format 
+ Wind Token following EIP20 format 
