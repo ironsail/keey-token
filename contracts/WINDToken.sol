@@ -15,7 +15,7 @@ contract WINDToken is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable {
     uint256 private totalTokens;
 
     constructor() ERC20("Iron Sail WIND", "WIND") {
-        totalTokens = 3000 * 10 ** uint256(decimals()); 
+        totalTokens = 3000 * 10 ** uint256(decimals());  // 3000 tokens
         _mint(owner(), totalTokens);  
     }
 
