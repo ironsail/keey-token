@@ -15,8 +15,12 @@ contract KEEYToken is ERC20, ERC20Burnable, ERC20Snapshot, Ownable, Pausable {
     uint256 private totalTokens;
 
     constructor() ERC20("Iron Sail KEEY", "KEEY") {
-        totalTokens = 3000 * 10 ** uint256(decimals());  // 3000 tokens
+        totalTokens = 2500;  // 2500 tokens no decimal
         _mint(owner(), totalTokens);  
+    }
+
+    function decimals() public view virtual override returns (uint8) {
+        return 0;
     }
 
     function snapshot() external onlyOwner {
