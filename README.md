@@ -1,2 +1,4 @@
 # keey-token
- KEEY Token following EIP20 format 
+ ERC20 KEEY Token
+   . Max supply 2500 tokens
+   . Decimal 0
